@@ -4,7 +4,7 @@ day=${1##+(0)}
 project=$(printf "day%02d" $1)
 session="$AOC_SESSION"
 
-cargo new ${project}
+cargo new ${project} --vcs none
 
 cd ${project}
 
